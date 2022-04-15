@@ -1,0 +1,36 @@
+send    recive
+6359971 31285290
+6376228 31288501
+6398003 31307246
+6404532 31309554
+6455772 31366356
+6484945 31408422
+7031736 33577903
+7508787 34574932
+7527975 34597725
+7539696 34607334
+
+
+
+
+int readFile(string filename, int *data, int *num) {
+  
+}
+
+
+
+
+1. How implement
+
+// 0 - work
+// 1 - youtube
+int recgnize(int *rcv, int *send, int num) {
+
+  // calculate average
+  // compare with the teshold 
+
+}
+
+
+
+
