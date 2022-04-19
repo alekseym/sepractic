@@ -73,7 +73,6 @@ public:
             pIfRow = (MIB_IFROW*)&pIfTable->table[i];
             if ((pIfRow->dwInOctets == 0) && (pIfRow->dwOutOctets == 0))
                 continue;
-            //        printf("\tIndex[%d]:\t %ld\n", i, pIfRow->dwIndex);
 
             // your new String
             string strname;
@@ -203,7 +202,6 @@ std::string getAdapterName(int argc,char**argv) {
       std::cout << argv[i] << std::endl;
 
       for(int j=offset;j<std::strlen(argv[i]);j++) {
-//        std::cout <<std::endl<< argv[i][j];
         if(argv[i][j]=='"') {
           return adapterName;
         }
@@ -232,7 +230,7 @@ int main(int argc,char**argv){
 
 
    if (argc > 1) {
-       std::string adapterName = getAdapterName(argc,argv);
+       adapterName = getAdapterName(argc,argv);
        vector<NetInterfaceInfo> statistic = collector.getStatisticForAllAdapters();
        NetInterfaceInfo oneStatistic = collector.getStatisticForOneAdapter(adapterName, statistic);
 
